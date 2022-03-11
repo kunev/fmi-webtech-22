@@ -1,0 +1,10 @@
+body > p {
+    background: yellow;
+}
+div p {
+    background: red;
+}
+p {
+    background: pink;
+    color: gray;
+}
