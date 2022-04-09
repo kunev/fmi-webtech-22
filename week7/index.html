@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log(1);
+            document.querySelector('button#call').addEventListener('click', function() {
+                fetch('http://localhost:3000/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({data: 'my request'}),
+                }).then(function(response) {
+                    console.log(`Response: ${response}`);
+                }, function(error) {
+                    console.log(`Error: ${error}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="call">Make the call</button>
+</body>
+</html>
