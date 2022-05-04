@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel="stylesheet",href="/static/base.css")
+    script(src="static/form.js")
+
+  body
+    h1 Gotta catch 'em all!
+    #contents
+      #dataList.flex-col-container
+        each pokemon in allPokemon
+          .flex-item
+            .flex-row-container
+              label.flex-item= pokemon.name
+              label.flex-item= pokemon.type
+  
+
+    include create_form

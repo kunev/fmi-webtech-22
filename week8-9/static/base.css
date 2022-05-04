@@ -1,0 +1,20 @@
+.flex-col-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-container {
+    max-width: 20em;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 2em;
+}
+
+.flex-item {
+    order: 5;
+}
+
+form {
+    max-width: 20em;
+}
